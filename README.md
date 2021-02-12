@@ -8,7 +8,10 @@ Installer un environnement virtuel Jupyterlab
 
 ### Prérequis
 
-Version de Python supérieure ou égale à 3.8.
+- Version de Python supérieure ou égale à 3.8.
+- Gestionnaire de version *git*
+
+### Imprimer la version de Python
 
 	python --version
 
@@ -18,9 +21,6 @@ Version de Python supérieure ou égale à 3.8.
 	cd jupyterlab
 	python -m venv .
 	.\Scripts\pip install jupyterlab
-	mkdir notebooks
-	cd notebooks
-	..\Scripts\jupyter-lab
 
 ### Linux/MacOSX
 
@@ -28,13 +28,24 @@ Version de Python supérieure ou égale à 3.8.
 	cd jupyterlab
 	python -m venv .
 	./bin/pip install jupyterlab
-	mkdir notebooks
+    
+Télécharger et exécuter les notebooks de ce dépôt git
+-----------------------------------------------------
+
+### Windows
+
+    git clone https://github.com/sverbois/notebooks.git
 	cd notebooks
+    ..\Scripts\pip install -r requirements.txt
+	..\Scripts\jupyter-lab
+
+### Linux/MacOSX
+
+	git clone https://github.com/sverbois/notebooks.git
+	cd notebooks
+    ../bin/pip install -r requirements.txt
 	../bin/jupyter-lab
 
-### Installer les dépendances
-
-    ../bin/pip install -r requirements.txt
 
 Raccourcis Jupyter Notebook
 ---------------------------
