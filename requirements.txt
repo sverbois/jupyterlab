@@ -1,3 +1,5 @@
 jupyterlab
 matplotlib
 requests
+sqlalchemy
+psycopg2
