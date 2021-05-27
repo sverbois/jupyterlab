@@ -19,15 +19,15 @@ Installer un environnement virtuel Jupyterlab
 
 	mkdir jupyterlab
 	cd jupyterlab
-	python -m venv .
-	.\Scripts\pip install jupyterlab
+	python -m venv venv
+	.\venv\Scripts\pip install jupyterlab
 
 ### Linux/MacOSX
 
 	mkdir jupyterlab
 	cd jupyterlab
-	python -m venv .
-	./bin/pip install jupyterlab
+	python -m venv venv
+	./venv/bin/pip install jupyterlab
     
 Télécharger et exécuter les notebooks de ce dépôt git
 -----------------------------------------------------
@@ -36,15 +36,15 @@ Télécharger et exécuter les notebooks de ce dépôt git
 
     git clone https://github.com/sverbois/notebooks.git
 	cd notebooks
-    ..\Scripts\pip install -r requirements.txt
-	..\Scripts\jupyter-lab
+    ..\venv\Scripts\pip install -r requirements.txt
+	..\venv\Scripts\jupyter-lab
 
 ### Linux/MacOSX
 
 	git clone https://github.com/sverbois/notebooks.git
 	cd notebooks
-    ../bin/pip install -r requirements.txt
-	../bin/jupyter-lab
+    ../venv/bin/pip install -r requirements.txt
+	../venv/bin/jupyter-lab
 
 
 Raccourcis Jupyter Notebook
