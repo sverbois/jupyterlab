@@ -3,3 +3,6 @@ matplotlib
 requests
 sqlalchemy
 psycopg2
+black
+isort
+jupyterlab_code_formatter
