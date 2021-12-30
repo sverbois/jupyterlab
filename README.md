@@ -2,49 +2,33 @@ Jupyterlab
 ==========
 
 Quelques *Jupyter Notebook* utilisés lors du cours de *Scripts serveurs* dans le cadre du *Brevet de Webdeveloper* à l'EICVN.
-
-Installer un environnement virtuel Jupyterlab
----------------------------------------------
-
+    
+Télécharger et exécuter les notebooks de ce dépôt git
+-----------------------------------------------------
 ### Prérequis
 
-- Version de Python supérieure ou égale à 3.8.
+- Version de Python supérieure ou égale à 3.9.
 - Gestionnaire de version *git*
 
-### Imprimer la version de Python
+#### Imprimer la version de Python
 
 	python --version
 
 ### Windows
 
-	mkdir jupyterlab
+    git clone https://github.com/sverbois/jupyterlab.git
 	cd jupyterlab
 	python -m venv venv
-	.\venv\Scripts\pip install jupyterlab
+    .\venv\Scripts\pip install -r requirements.txt
+	.\venv\Scripts\jupyter-lab notebooks
 
 ### Linux/MacOSX
 
-	mkdir jupyterlab
+	git clone https://github.com/sverbois/jupyterlab.git
 	cd jupyterlab
 	python -m venv venv
-	./venv/bin/pip install jupyterlab
-    
-Télécharger et exécuter les notebooks de ce dépôt git
------------------------------------------------------
-
-### Windows
-
-    git clone https://github.com/sverbois/notebooks.git
-	cd notebooks
-    ..\venv\Scripts\pip install -r requirements.txt
-	..\venv\Scripts\jupyter-lab
-
-### Linux/MacOSX
-
-	git clone https://github.com/sverbois/notebooks.git
-	cd notebooks
-    ../venv/bin/pip install -r requirements.txt
-	../venv/bin/jupyter-lab
+    ./venv/bin/pip install -r requirements.txt
+	./venv/bin/jupyter-lab notebooks
 
 
 Raccourcis Jupyter Notebook
